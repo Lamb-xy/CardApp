@@ -1,0 +1,77 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "1.8.0_231" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:172:p, comp label1:::p::p}, seq l {space :p:67:p, par l {par t {comp label4:::p::p, comp label5:::p::p}, comp label3:::p::p, comp label6::l:p::p, comp toggleButton1:::p::p}, space :p:57:p, par t:::p {seq {comp button3:::p::p, space :::x, comp button2:::p::p}, par l {comp textField1:::p:201:p, comp label2:::p::p, comp passwordField1::l:p:201:p, comp passwordField2::l:p:201:p}}}}, space ::68:x}}"
+			"$verticalGroup": "par l {seq l {space :p:22:p, par t {comp label2:::p::p, comp label1:::p::p}, space :p:47:p, par b {comp textField1::b:p::p, comp label3::b:p::p}, space :p:30:p, par b {comp passwordField1::b:p::p, comp label4::b:p::p}, space :p:31:p, par b {comp passwordField2::b:p::p, comp label5::b:p::p}, space :p:33:p, par b {comp button2::b:p::p, comp button3::b:p::p, comp label6::b:p::p, comp toggleButton1::b:p::p}, space ::50:x}}"
+		} ) {
+			name: "this"
+			"title": "请立即更改口令"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "更改口令"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "账户名:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"text": "小龙"
+				"enabled": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "请输入新口令："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "请核对新口令："
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField2"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "确认"
+				"font": new java.awt.Font( "楷体", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "取消"
+				"font": new java.awt.Font( "楷体", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+			} )
+			add( new FormComponent( "javax.swing.JToggleButton" ) {
+				name: "toggleButton1"
+				"text": "60s"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 200, 86 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::80:x, comp label7:::p::p, space :p:78:p}}"
+			"$verticalGroup": "par l {seq l {space :p:55:p, comp label7:::p::p, space ::75:x}}"
+		} ) {
+			name: "dialog1"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "口令更改成功"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 670, 195 )
+			"size": new java.awt.Dimension( 200, 150 )
+		} )
+	}
+}

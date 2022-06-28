@@ -1,0 +1,42 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "1.8.0_231" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:211:p, comp label1:::p::p}, seq l {space :p:50:p, par l {comp label2::l:p::p, comp label3::l:p::p}, space :p:21:p, par l {comp textField1:::p:135:p, comp passwordField1:::p:116:p}}, seq l {space :p:146:p, comp button1:::p::p}}, space ::232:x}}"
+			"$verticalGroup": "par l {seq l {space :p:25:p, comp label1:::p::p, space :p:26:p, par b {comp label2::b:p::p, comp textField1::b:p::p}, par l {seq {space :p:24:p, comp label3:::p::p}, seq l {space :p:32:p, comp passwordField1:::p::p}}, space ::104:x, comp button1:::p::p, space :p:39:p}}"
+		} ) {
+			name: "this"
+			"title": "注册界面"
+			"background": new java.awt.Color( 204, 204, 204, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "注册"
+				"font": new java.awt.Font( "微软雅黑", 0, 26 )
+				"foreground": new java.awt.Color( 153, 153, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "账户名："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "口令："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确定"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 160, 46 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

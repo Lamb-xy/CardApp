@@ -1,0 +1,179 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "1.8.0_231" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l:::p {comp popupMenu3:::::x, comp menu6:::::x}, par l {seq {space :p:82:p, comp label13:::p::p}, seq l {space :p:6:p, comp panel1:::p::p}}, space :::x}}"
+			"$verticalGroup": "par l {seq l {space :p:8:p, par l {seq l {space :0:0:x, comp label13:::p:43:p, space :::p, comp panel1:::p::p}, seq {comp menu6:::p::p, space :::p, comp popupMenu3:::p::p, space :::p}}}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+				name: "popupMenu3"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu7"
+					"text": "共享"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem8"
+						"text": "名片共享"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem9"
+						"text": "名片夹共享"
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu8"
+						"text": "导出"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem10"
+							"text": "导出到文件"
+						} )
+					} )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+				name: "menu6"
+				"text": "新增"
+				add( new FormComponent( "javax.swing.JMenuItem" ) {
+					name: "menuItem5"
+					"text": "逐片新增"
+				} )
+				add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+					name: "separator2"
+				} )
+				add( new FormComponent( "javax.swing.JMenuItem" ) {
+					name: "menuItem6"
+					"text": "批量新增"
+				} )
+				add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+					name: "separator3"
+				} )
+				add( new FormComponent( "javax.swing.JMenuItem" ) {
+					name: "menuItem7"
+					"text": "批量导入"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+				"text": "欢迎使用名片册"
+				"font": new java.awt.Font( "宋体", 0, 24 )
+				"foreground": new java.awt.Color( 153, 153, 255, 255 )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {space :0:394:x}"
+				"$verticalGroup": "par l {space :0:275:x}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 246, 234, 227, 255 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 90, 100 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:79:p, par l {comp label2:::p::p, comp label4:::p::p, comp label3:::p::p, comp label6:::p::p, comp label5:::p::p, comp label7:::p::p, comp label1:::p::p, comp label8::l:p::p, comp label9::l:p::p}, space ::67:x, par l:::p {comp textField1::::143:x, comp textField7::::143:x, comp textField5::l::143:x, comp textField4::l::143:x, comp textField2::l::143:x, comp textField3::l::143:x, comp textField6::l::143:x, comp textField8::::143:x, comp textField9::::143:x}, space :p:146:p}, seq {par l {seq {space :p:78:p, par l {comp label11::l:p::p, comp label10::l:p::p}, space :p:53:p, par l:::p {comp textField11::::143:x, comp textField10::::143:x}}, seq l {space :p:191:p, comp button3:::p::p}}, space ::146:x}}"
+			"$verticalGroup": "par l {seq l {space :p:28:p, par b {comp label1::b:p::p, comp textField1::b:p::p}, space u:::p, par b {comp label7::b:p::p, comp textField7::b:p::p}, space :::p, par b {comp label5::b:p::p, comp textField5::b:p::p}, space :::p, par b {comp label6::b:p::p, comp textField4::b:p::p}, space :p:10:p, par b {comp label3::b:p::p, comp textField2::b:p::p}, space :::p, par b {comp label4::b:p::p, comp textField3::b:p::p}, space :::p, par b {comp label2::b:p::p, comp textField6::b:p::p}, space :p:7:p, par b {comp label8::b:p::p, comp textField8::b:p::p}, space :p:10:p, par b {comp label9::b:p:21:p, comp textField9::b:p::p}, space :::p, par b {comp label11::b:p::p, comp textField11::b:p::p}, space :p:16:p, par b {comp label10::b:p::p, comp textField10::b:p::p}, space :p:35:p, comp button3:::p::p, space ::35:x}}"
+		} ) {
+			name: "frame1"
+			"title": "我的名片夹"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "姓名："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "机构名称："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "头衔："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "机构职务："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "性别："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField6"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "头像："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField7"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "年龄："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField8"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "机构地址："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField9"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "联系电话："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField10"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "电子社交号："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField11"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "电子邮箱："
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "确定"
+				"font": new java.awt.Font( "楷体", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 526, 0 )
+			"size": new java.awt.Dimension( 410, 420 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:58:p, comp label12:::p:106:p, space ::84:x}}"
+			"$verticalGroup": "par l {seq l {space :p:49:p, comp label12:::p::p, space ::88:x}}"
+		} ) {
+			name: "dialog1"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+				"text": "批量新增成功"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 940, 50 )
+			"size": new java.awt.Dimension( 200, 155 )
+		} )
+	}
+}

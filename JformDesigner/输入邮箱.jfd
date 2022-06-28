@@ -1,0 +1,34 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "1.8.0_231" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par t {comp textField1:::p:414:p, par l {seq l {space :p:128:p, comp button1:::p::p, space :p:84:p, comp button2:::p::p}, seq l {space :p:42:p, comp label1:::p::p}}}, space ::44:x}}"
+			"$verticalGroup": "par l {seq l {space :p:65:p, comp label1:::p::p, space :p:62:p, comp textField1:::p::p, space ::118:x, par b {comp button1::b:p::p, comp button2::b:p::p}, space :p:52:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "请在以下框内输入你的电子邮件地址，用于找回口令"
+				"font": new java.awt.Font( "宋体", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确认"
+				"font": new java.awt.Font( "楷体", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "取消"
+				"font": new java.awt.Font( "楷体", 0, 20 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 150, 90 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
