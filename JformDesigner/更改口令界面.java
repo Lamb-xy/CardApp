@@ -33,11 +33,11 @@ public class 更改口令界面 extends JFrame {
 		label7 = new JLabel();
 
 		//======== this ========
-		setTitle("\u8bf7\u7acb\u5373\u66f4\u6539\u53e3\u4ee4");
+		setTitle("ChangePasswordInterface");
 		Container contentPane = getContentPane();
 
 		//---- label2 ----
-		label2.setText("\u66f4\u6539\u53e3\u4ee4");
+		label2.setText("\u8bf7\u7acb\u5373\u66f4\u6539\u53e3\u4ee4");
 
 		//---- label3 ----
 		label3.setText("\u8d26\u6237\u540d:");

@@ -17,33 +17,50 @@ public class 灰色初始界面 extends JFrame {
 
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+		panel1 = new JPanel();
 		label1 = new JLabel();
 
 		//======== this ========
-		setTitle("\u4e3b\u754c\u9762");
+		setTitle("InitialMainInterface");
 		setBackground(new Color(204, 204, 204));
 		Container contentPane = getContentPane();
 
-		//---- label1 ----
-		label1.setText("\u6b22\u8fce\u4f7f\u7528\u540d\u7247\u518c");
-		label1.setFont(new Font("\u5b8b\u4f53", Font.PLAIN, 24));
-		label1.setForeground(new Color(153, 153, 255));
+		//======== panel1 ========
+		{
+			panel1.setBackground(new Color(204, 204, 204));
+
+			//---- label1 ----
+			label1.setText("\u6b22\u8fce\u4f7f\u7528\u540d\u7247\u518c");
+			label1.setFont(new Font("\u5b8b\u4f53", Font.PLAIN, 24));
+			label1.setForeground(new Color(153, 153, 255));
+
+			GroupLayout panel1Layout = new GroupLayout(panel1);
+			panel1.setLayout(panel1Layout);
+			panel1Layout.setHorizontalGroup(
+				panel1Layout.createParallelGroup()
+					.addGroup(panel1Layout.createSequentialGroup()
+						.addGap(161, 161, 161)
+						.addComponent(label1)
+						.addContainerGap(169, Short.MAX_VALUE))
+			);
+			panel1Layout.setVerticalGroup(
+				panel1Layout.createParallelGroup()
+					.addGroup(panel1Layout.createSequentialGroup()
+						.addGap(110, 110, 110)
+						.addComponent(label1, GroupLayout.PREFERRED_SIZE, 43, GroupLayout.PREFERRED_SIZE)
+						.addContainerGap(183, Short.MAX_VALUE))
+			);
+		}
 
 		GroupLayout contentPaneLayout = new GroupLayout(contentPane);
 		contentPane.setLayout(contentPaneLayout);
 		contentPaneLayout.setHorizontalGroup(
 			contentPaneLayout.createParallelGroup()
-				.addGroup(contentPaneLayout.createSequentialGroup()
-					.addGap(160, 160, 160)
-					.addComponent(label1)
-					.addContainerGap(170, Short.MAX_VALUE))
+				.addComponent(panel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 		);
 		contentPaneLayout.setVerticalGroup(
 			contentPaneLayout.createParallelGroup()
-				.addGroup(contentPaneLayout.createSequentialGroup()
-					.addGap(91, 91, 91)
-					.addComponent(label1, GroupLayout.PREFERRED_SIZE, 43, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap(202, Short.MAX_VALUE))
+				.addComponent(panel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 		);
 		pack();
 		setLocationRelativeTo(getOwner());
@@ -51,6 +68,7 @@ public class 灰色初始界面 extends JFrame {
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+	private JPanel panel1;
 	private JLabel label1;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables
 }

@@ -8,7 +8,7 @@ new FormModel {
 			"$verticalGroup": "par l {seq l {space :p:25:p, comp label1:::p::p, space :p:26:p, par b {comp label2::b:p::p, comp textField1::b:p::p}, par l {seq {space :p:24:p, comp label3:::p::p}, seq l {space :p:32:p, comp passwordField1:::p::p}}, space ::104:x, comp button1:::p::p, space :p:39:p}}"
 		} ) {
 			name: "this"
-			"title": "注册界面"
+			"title": "RegistrationInterface"
 			"background": new java.awt.Color( 204, 204, 204, 255 )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"

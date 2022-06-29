@@ -40,7 +40,7 @@ public class µÇÂ¼½çÃæ extends JFrame {
 		label9 = new JLabel();
 
 		//======== this ========
-		setTitle("\u8bf7\u767b\u5f55\u540d\u7247\u518c\u7cfb\u7edf");
+		setTitle("LoginInterface");
 		setBackground(new Color(204, 204, 204));
 		Container contentPane = getContentPane();
 

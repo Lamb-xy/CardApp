@@ -4,10 +4,11 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq {par l:::p {comp popupMenu3:::::x, comp menu6:::::x}, par l {seq {space :p:82:p, comp label13:::p::p}, seq l {space :p:6:p, comp panel1:::p::p}}, space :::x}}"
-			"$verticalGroup": "par l {seq l {space :p:8:p, par l {seq l {space :0:0:x, comp label13:::p:43:p, space :::p, comp panel1:::p::p}, seq {comp menu6:::p::p, space :::p, comp popupMenu3:::p::p, space :::p}}}}"
+			"$horizontalGroup": "par l {seq l {comp popupMenu5:::p::p, space :p:115:p, comp label13:::p::p, space :p:26:p, comp title1:::p::p, space :0:0:x}, seq l {comp popupMenu3:::p::p, space :::x, comp scrollPane1:::p:408:p, space :p:1:p}}"
+			"$verticalGroup": "par l {seq l {comp label13:::p:43:p, space :0:0:x}, seq {space :::p, par l {seq l {comp popupMenu5:::p::p, space :::p, comp popupMenu3:::p::p}, seq l {comp title1:::p::p, space :::p, comp scrollPane1:::p:291:p}}, space :::x}}"
 		} ) {
 			name: "this"
+			"title": "MainInterface"
 			add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
 				name: "popupMenu3"
 				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
@@ -21,53 +22,52 @@ new FormModel {
 						name: "menuItem9"
 						"text": "名片夹共享"
 					} )
-					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
-						name: "menu8"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
 						"text": "导出"
-						add( new FormComponent( "javax.swing.JMenuItem" ) {
-							name: "menuItem10"
-							"text": "导出到文件"
-						} )
 					} )
-				} )
-			} )
-			add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
-				name: "menu6"
-				"text": "新增"
-				add( new FormComponent( "javax.swing.JMenuItem" ) {
-					name: "menuItem5"
-					"text": "逐片新增"
-				} )
-				add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
-					name: "separator2"
-				} )
-				add( new FormComponent( "javax.swing.JMenuItem" ) {
-					name: "menuItem6"
-					"text": "批量新增"
-				} )
-				add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
-					name: "separator3"
-				} )
-				add( new FormComponent( "javax.swing.JMenuItem" ) {
-					name: "menuItem7"
-					"text": "批量导入"
 				} )
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label13"
-				"text": "欢迎使用名片册"
 				"font": new java.awt.Font( "宋体", 0, 24 )
 				"foreground": new java.awt.Color( 153, 153, 255, 255 )
 			} )
-			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {space :0:394:x}"
-				"$verticalGroup": "par l {space :0:275:x}"
-			} ) {
-				name: "panel1"
-				"background": new java.awt.Color( 246, 234, 227, 255 )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+				name: "title1"
+				"textWithMnemonic": "名片管理系统"
+				"font": new java.awt.Font( "宋体", 0, 20 )
+			} )
+			add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+				name: "popupMenu5"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu6"
+					"text": "新增"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem5"
+						"text": "逐片新增"
+					} )
+					add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+						name: "separator2"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": "批量新增"
+					} )
+					add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+						name: "separator3"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem7"
+						"text": "批量导入"
+					} )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 90, 100 )
+			"location": new java.awt.Point( 106, 86 )
 			"size": new java.awt.Dimension( 400, 300 )
 		} )
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
@@ -75,7 +75,7 @@ new FormModel {
 			"$verticalGroup": "par l {seq l {space :p:28:p, par b {comp label1::b:p::p, comp textField1::b:p::p}, space u:::p, par b {comp label7::b:p::p, comp textField7::b:p::p}, space :::p, par b {comp label5::b:p::p, comp textField5::b:p::p}, space :::p, par b {comp label6::b:p::p, comp textField4::b:p::p}, space :p:10:p, par b {comp label3::b:p::p, comp textField2::b:p::p}, space :::p, par b {comp label4::b:p::p, comp textField3::b:p::p}, space :::p, par b {comp label2::b:p::p, comp textField6::b:p::p}, space :p:7:p, par b {comp label8::b:p::p, comp textField8::b:p::p}, space :p:10:p, par b {comp label9::b:p:21:p, comp textField9::b:p::p}, space :::p, par b {comp label11::b:p::p, comp textField11::b:p::p}, space :p:16:p, par b {comp label10::b:p::p, comp textField10::b:p::p}, space :p:35:p, comp button3:::p::p, space ::35:x}}"
 		} ) {
 			name: "frame1"
-			"title": "我的名片夹"
+			"title": "InputInformationWindow"
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
 				"text": "姓名："
@@ -163,17 +163,105 @@ new FormModel {
 			"size": new java.awt.Dimension( 410, 420 )
 		} )
 		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space :p:58:p, comp label12:::p:106:p, space ::84:x}}"
-			"$verticalGroup": "par l {seq l {space :p:49:p, comp label12:::p::p, space ::88:x}}"
+			"$horizontalGroup": "par l {seq l {space :p:35:p, comp label12:::p:204:p, space ::78:x}}"
+			"$verticalGroup": "par l {seq l {space :p:40:p, comp label12:::p::p, space ::80:x}}"
 		} ) {
 			name: "dialog1"
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label12"
 				"text": "批量新增成功"
+				"font": new java.awt.Font( "微软雅黑", 0, 26 )
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 940, 50 )
-			"size": new java.awt.Dimension( 200, 155 )
+			"location": new java.awt.Point( 840, 100 )
+			"size": new java.awt.Dimension( 255, 155 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :::p, comp popupMenu2:::p::p, space :::x, comp textField13:::p:234:p, space :p:34:p, comp button1:::p:75:p}, seq {par l {comp label14::l:p:119:p, seq l {space :p:48:p, comp label15:::p::p, space :p:30:p, comp textField12:::p:234:p}, par t:l::p {comp popupMenu4::l:::x, comp popupMenu1::l:::x}}, space :0:109:x}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {comp label14:::p:28:p, space :::p, comp popupMenu1:::p::p, space :::p, comp popupMenu4:::p::p, space ::112:x, par b {comp label15::b:p::p, comp textField12::b:p::p}, par l {seq {space :p:23:p, comp textField13:::p::p}, seq l {space u:::p, comp popupMenu2:::p::p}}, space :::p}, seq t {space :0:261:x, comp button1:::p:37:p}}"
+		} ) {
+			name: "frame2"
+			"title": "ExportToFile"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+				"text": "导出到文件"
+			} )
+			add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+				name: "popupMenu1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "指定文件路径"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "我的桌面"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": "C盘"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem10"
+						"text": "D盘"
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+				"text": "指定文件名"
+			} )
+			add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+				name: "popupMenu2"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "文件类型"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem11"
+						"text": "xls"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem12"
+						"text": "pdf"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem13"
+						"text": "doc"
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确认"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField12"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField13"
+			} )
+			add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+				name: "popupMenu4"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "我的文档"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 150, 386 )
+			"size": new java.awt.Dimension( 410, 270 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:148:p, comp label16:::p::p, space ::183:x}}"
+			"$verticalGroup": "par l {seq l {space :p:44:p, comp label16:::p::p, space ::44:x}}"
+		} ) {
+			name: "dialog2"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+				"text": "导出成功"
+				"font": new java.awt.Font( "微软雅黑", 0, 26 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 626, 450 )
+			"size": new java.awt.Dimension( 350, 130 )
 		} )
 	}
 }

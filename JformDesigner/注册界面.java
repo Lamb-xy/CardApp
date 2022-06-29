@@ -26,7 +26,7 @@ public class ×¢²á½çÃæ extends JFrame {
 		button1 = new JButton();
 
 		//======== this ========
-		setTitle("\u6ce8\u518c\u754c\u9762");
+		setTitle("RegistrationInterface");
 		setBackground(new Color(204, 204, 204));
 		Container contentPane = getContentPane();
 

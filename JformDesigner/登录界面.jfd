@@ -8,7 +8,7 @@ new FormModel {
 			"$verticalGroup": "par l {seq l {space :::p, comp label6:::p::p, space ::15:x, par b {comp textField1::b:p::p, comp label2::b:p::p}, space :p:27:p, par b {comp label3::b:p::p, comp passwordField1::b:p::p}, space s:::p, par b {comp label7::b:p::p, comp textField2::b:p::p}, space :p:20:p, par b {comp button2::b:p::p, comp button3::b:p::p}, space :p:55:p, par b {comp label4::b:p::p, comp label5::b:p::p}, space :::p}}"
 		} ) {
 			name: "this"
-			"title": "请登录名片册系统"
+			"title": "LoginInterface"
 			"background": new java.awt.Color( 204, 204, 204, 255 )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label2"

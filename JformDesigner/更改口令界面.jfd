@@ -8,13 +8,13 @@ new FormModel {
 			"$verticalGroup": "par l {seq l {space :p:22:p, par t {comp label2:::p::p, comp label1:::p::p}, space :p:47:p, par b {comp textField1::b:p::p, comp label3::b:p::p}, space :p:30:p, par b {comp passwordField1::b:p::p, comp label4::b:p::p}, space :p:31:p, par b {comp passwordField2::b:p::p, comp label5::b:p::p}, space :p:33:p, par b {comp button2::b:p::p, comp button3::b:p::p, comp label6::b:p::p, comp toggleButton1::b:p::p}, space ::50:x}}"
 		} ) {
 			name: "this"
-			"title": "请立即更改口令"
+			"title": "ChangePasswordInterface"
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label2"
-				"text": "更改口令"
+				"text": "请立即更改口令"
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label3"
